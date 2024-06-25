@@ -296,7 +296,7 @@ void tick_handler(void) {
 
 int main(void) {
   // Init interrupt table
-  init_interrupts(true);
+  init_interrupts(false);
 
   // shouldn't have interrupts here, but just in case
   disable_interrupts();
